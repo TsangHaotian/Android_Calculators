@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Key">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="layout_columnWeight">1.0</item>
+        <item name="layout_rowWeight">1.0</item>
+        <item name="layout_gravity">center</item>
+    </style>
+
+    <style name="Key.Symbol">
+        <item name="android:background">@drawable/btn_symbol</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="Key.Number">
+        <item name="android:background">@drawable/btn_symbol_number</item>
+        <item name="android:textColor">@color/black_500</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+</resources>

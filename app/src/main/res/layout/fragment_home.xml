@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical">
+
+    <!-- Result Display -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/process_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:textColor="@color/pink_300"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/result_textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="top|end"
+                android:textColor="@color/pink_700"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Keypad -->
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/purple_200"
+        android:padding="20dp"
+        app:alignmentMode="alignBounds"
+        app:columnCount="4"
+        app:rowCount="5"
+        tools:ignore="MissingClass">
+
+        <!-- Reset Key -->
+        <ImageView
+            android:id="@+id/reset_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_reset" />
+
+        <!-- Delete Key -->
+        <ImageView
+            android:id="@+id/delete_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_delete" />
+
+        <!-- Percent Key -->
+        <ImageView
+            android:id="@+id/percent_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_percent" />
+
+        <!-- Divide Key -->
+        <ImageView
+            android:id="@+id/divide_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_divide" />
+
+        <!-- Number Keys -->
+        <TextView
+            android:id="@+id/seven_textView"
+            style="@style/Key.Number"
+            android:text="7" />
+
+        <TextView
+            android:id="@+id/eight_textView"
+            style="@style/Key.Number"
+            android:text="8" />
+
+        <TextView
+            android:id="@+id/nine_textView"
+            style="@style/Key.Number"
+            android:text="9" />
+
+        <ImageView
+            android:id="@+id/multiply_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_multiply" />
+
+        <TextView
+            android:id="@+id/four_textView"
+            style="@style/Key.Number"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/five_textView"
+            style="@style/Key.Number"
+            android:text="5" />
+
+        <TextView
+            android:id="@+id/six_textView"
+            style="@style/Key.Number"
+            android:text="6" />
+
+        <ImageView
+            android:id="@+id/subtract_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_subtract" />
+
+        <TextView
+            android:id="@+id/one_textView"
+            style="@style/Key.Number"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/two_textView"
+            style="@style/Key.Number"
+            android:text="2" />
+
+        <TextView
+            android:id="@+id/three_textView"
+            style="@style/Key.Number"
+            android:text="3" />
+
+        <ImageView
+            android:id="@+id/add_imageView"
+            style="@style/Key.Symbol"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:id="@+id/zero_textView"
+            style="@style/Key.Number"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/point_textView"
+            style="@style/Key.Number"
+            android:text="." />
+
+        <!-- Equals Key -->
+        <ImageView
+            android:id="@+id/equals_imageView"
+            style="@style/Key.Symbol"
+            android:layout_width="150dp"
+            android:background="@drawable/btn_symbol_deep"
+            android:src="@drawable/ic_equals"
+            app:layout_columnSpan="2" />
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
