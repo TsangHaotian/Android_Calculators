@@ -1,32 +1,29 @@
-# 简易安卓计算器 ➕➖✖️➗
+# Simple Android Calculator ➕➖✖️➗
+A lightweight calculator application focused on basic arithmetic operations, suitable for fundamental calculation needs.
 
-![GitHub stars](https://img.shields.io/badge/版本-1.0.0-green)
-![最小SDK](https://img.shields.io/badge/Android-5.0%2B-blue)
+## 📱 Basic Features
 
-一个专注于四则运算的轻量级计算器应用，适合基础计算需求
+### Core Operations
+- **Addition**: `12 + 5 = 17`
+- **Subtraction**: `20 - 8 = 12`
+- **Multiplication**: `6 × 7 = 42`
+- **Division**: `15 ÷ 3 = 5`
 
-## 📱 基础功能
+### Practical Features
+- Real-time calculation display
+- Backspace key to correct input
+- One-click clear result
+- Continuous calculation support
+- Clean Material Design interface
 
-### 核心运算
-- **加法**：`12 + 5 = 17`
-- **减法**：`20 - 8 = 12`
-- **乘法**：`6 × 7 = 42`
-- **除法**：`15 ÷ 3 = 5`
-
-### 实用特性
-- 实时计算显示
-- 退格键修正输入
-- 一键清空结果
-- 连续计算功能
-- 简洁Material设计
-
-## 🖼️ 界面展示
+## 🖼️ Interface Preview
 ```plaintext
-[显示屏]
+[Display Screen]
 0
 
-[按键区]
+[Keypad Area]
 [7][8][9][÷]
 [4][5][6][×]
 [1][2][3][-]
 [C][0][=][+]
+```
